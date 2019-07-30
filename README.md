@@ -1,2 +1,4 @@
 # leetcode
-算法刷题
+
+[leetcode-cn 力扣](https://leetcode-cn.com/)
+
