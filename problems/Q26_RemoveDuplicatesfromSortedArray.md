@@ -1,4 +1,4 @@
-## [删除排序数组中的重复项 - Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)
+## [删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)
 
 `简单`
 
@@ -68,6 +68,6 @@ var removeDuplicates = function(nums) {
 **题解**
 参考了别人题解中的快慢指针方法，慢指针记录了所有非重复数据，快指针遍历整个数组，同时在一遍循环的同时搬运数据，较第一个写法少了一次循环。
 其实第一个写法中 pre 就相当于慢指针指向的数据，i 就相当于快指针，但思想不对。
-时间复杂度：O(n)。最好、最坏执行次数恒定。
-空间复杂度：O(1)。为原地排序。
+时间复杂度：O(n)。
+空间复杂度：O(1)。
 
