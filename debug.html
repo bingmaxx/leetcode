@@ -10,8 +10,29 @@
     // var threeSum = function (nums) {
 
     // };
-
     // threeSum([-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6]);
+
+    function func(list) {
+      for (let i = 0; i < list.length - 1; i++) {
+        for (let j = 0; j < list.length - i - 1; j++) {
+          if (list[j] > list[j + 1]) {
+            let temp = list[j];
+            list[j] = list[j + 1];
+            list[j + 1] = temp;
+          }
+        }
+      }
+
+      console.log('打印list: ', list);
+    }
+
+    const testList = [
+      [0, 12, 15, 18, -2, 3, 7],
+      [0, 0, 0, -1, -1, 12, 9, 9],
+    ];
+    testList.forEach(list => {
+      func(list);
+    });
   </script>
 
   <style type="text/css">
@@ -39,7 +60,6 @@
       border: 1px solid #DCDFE6;
       outline: none;
     }
-
   </style>
 </head>
 
