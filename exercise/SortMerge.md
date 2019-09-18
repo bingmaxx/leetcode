@@ -6,14 +6,78 @@
 ## javascript 实现 
 ```js
 /**
- * desc: 归并排序
+ * desc: 递归，将list 数组最终分解为一个元素，即 min = max
  * input:
- * @param {Array} list
+ * @param {Array} list 待排序的完整数组
+ * @param {Number} min 分解后区间最小坐标
+ * @param {Number} max 分解后区间最大坐标
  */
-function func(list) {
+function merge_sort(list, min, max) {
+  if (min >= max) return;
 
+  // middle 为区间中间元素坐标（在分解后的第一个区间）
+  let middle = parseInt((min + max) / 2);
+  merge_sort(list, min, middle);
+  merge_sort(list, middle + 1, max);
+  return merge(list, min, max, middle);
 }
 
+/**
+ * desc: 双指针法将两个有序数组合并为一个有序数组
+ * input:
+ * @param {Array} list 数组下标从 min 到 middle 有序，从 middle+1 到 max 有序
+ * @param {Number} min 
+ * @param {Number} max 
+ * @param {Number} middle 
+ */
+function merge(list, min, max, middle) {
+  let i_0 = min;
+  let i_1 = middle + 1;
+  let temp = [];
+
+  for (let k = 0; k < max - min + 1; k++) {
+    if (i_0 <= middle && i_1 <= max) {
+      if (list[i_0] <= list[i_1]) {
+        temp.push(list[i_0]);
+        i_0++;
+      } else {
+        temp.push(list[i_1]);
+        i_1++;
+      }
+    } else {
+      break;
+    }
+  }
+
+  if (i_0 > middle) {
+    for (let k = i_1; k <= max; k++) {
+      temp.push(list[k]);
+    }
+  }
+
+  if (i_1 > max) {
+    for (let k = i_0; k <= middle; k++) {
+      temp.push(list[k]);
+    }
+  }
+
+  for (let k = 0; k < temp.length; k++) {
+    list[k + min] = temp[k];
+  }
+}
+
+/**
+ * 测试
+ */
+const testList = [
+  [0, 12, 15, 18, -2, 3, 7, 10],
+  [1, 2, 3, 4, 5, 6, 7],
+  [7, 6, 5, 4, 3, 2, 1],
+];
+testList.forEach(list => {
+  merge_sort(list, 0, list.length - 1);
+  console.log('打印list: ', list);
+});
 ```
 
 ### 时间复杂度
