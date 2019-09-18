@@ -3,7 +3,7 @@
 
 ## 基础算法练习
 ### 排序
-- [ ] 冒泡排序 SortBubble
+- [x] 冒泡排序 SortBubble
 - [ ] 插入排序 SortInsertion
 - [ ] 选择排序 SortSelection
 - [ ] 归并排序 SortMerge

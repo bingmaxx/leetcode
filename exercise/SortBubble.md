@@ -11,6 +11,8 @@
  * @param {Array} list
  */
 function func(list) {
+  if (list.length <= 1) return;
+
   for (let i = 0; i < list.length - 1; i++) {
     // 完成冒泡的数据不再参与交换
     for (let j = 0; j < list.length - i - 1; j++) {
@@ -58,11 +60,13 @@ $ S = \frac {((n - 1) + 1) * (n - 1)} {2} = \frac 1 2 n^2 - \frac 1 2 n $
 ## javascript 实现 2
 ```js
 /**
- * desc: 冒泡排序
+ * desc: 冒泡排序，数据完全有序时提前退出
  * input:
  * @param {Array} list
  */
 function func(list) {
+  if (list.length <= 1) return;
+
   for (let i = 0; i < list.length - 1; i++) {
     let noSwap = true;
     // 完成冒泡的数据不再参与交换
