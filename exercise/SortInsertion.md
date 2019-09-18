@@ -14,7 +14,6 @@
 function func(list) {
   if (list.length <= 1) return;
 
-  // i 在未排序区间从前往后移动
   for (i = 1; i < list.length; i++) {
     const value = list[i];
     // j 在已排序区间从后往前移动

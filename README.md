@@ -5,7 +5,7 @@
 ### 排序
 - [x] 冒泡排序 SortBubble
 - [x] 插入排序 SortInsertion
-- [ ] 选择排序 SortSelection
+- [x] 选择排序 SortSelection
 - [ ] 归并排序 SortMerge
 - [ ] 快速排序 SortQuick
 - [ ] 桶排序 SortBucket
