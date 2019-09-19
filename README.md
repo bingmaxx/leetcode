@@ -7,7 +7,7 @@
 - [x] 插入排序 SortInsertion
 - [x] 选择排序 SortSelection
 - [x] 归并排序 SortMerge
-- [ ] 快速排序 SortQuick
+- [x] 快速排序 SortQuick
 - [ ] 桶排序 SortBucket
 - [ ] 计数排序 SortCounting
 - [ ] 基数排序 SortRadix
