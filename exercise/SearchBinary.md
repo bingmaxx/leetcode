@@ -22,7 +22,7 @@ function func(list, num) {
  * @param {Number} mid 待查找数据的下标，不存在返回 -1
  */
 function binary_search(list, min, max, num) {
-  if (min > max) return - 1;
+  if (min > max) return -1;
 
   // 小技巧: 等价于(max + min)/2, 可以防止 max + min 过大
   let mid = parseInt(min + (max - min) / 2);
