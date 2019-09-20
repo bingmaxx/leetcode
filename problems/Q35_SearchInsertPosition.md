@@ -17,11 +17,12 @@ var searchInsert = function(nums, target) {
   return nums.length;
 };
  ```
-**执行结果**
+
+### 执行结果
 - 用时：76 ms，76.36%
 - 内存：34.3 MB，30.66%
 
-**题解**
+### 题解
 遍历法。
 
 最好情况时间复杂度：$O(1)$。  
@@ -54,11 +55,11 @@ function binary_search(list, min, max, num) {
 }
 ```
 
-**执行结果**
+### 执行结果
 - 用时：56 ms，99.84%  
 - 内存：34.2 MB，44.82%
 
-**题解**
+### 题解
 无重复元素下的二分查找法（`exercise/SearchBinary.md`），区别在于目标值不存在时返回它将会被按顺序插入的位置。  
 
 最好情况时间复杂度：$O(1)$。  
