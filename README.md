@@ -13,7 +13,7 @@
 - [ ] 基数排序 SortRadix
 
 ### 查找
-- [ ] 二分查找 SearchBinary
+- [x] 二分查找 SearchBinary
 
 
 ## leetcode
