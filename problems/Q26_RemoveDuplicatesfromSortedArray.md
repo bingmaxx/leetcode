@@ -42,7 +42,7 @@ var removeDuplicates = function(nums) {
 空间复杂度：O(1)。为原地排序。
 
 
-```
+```js
 /**
  * @param {number[]} nums
  * @return {number}

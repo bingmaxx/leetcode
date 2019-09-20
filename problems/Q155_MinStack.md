@@ -1,7 +1,7 @@
 # [最小栈](https://leetcode-cn.com/problems/min-stack)
 
 > 使用数组模拟栈，检索栈中最小元素：遍历栈中全部元素
-```
+```js
 /**
  * initialize your data structure here.
  */
