@@ -18,6 +18,8 @@ function func(list, num) {
  * @param {Number} min 待查找分区下标最小值
  * @param {Number} max 待查找分区下标最大值
  * @param {Number} num 待查找的数据
+ * output:
+ * @param {Number} mid 待查找数据的下标，不存在返回 -1
  */
 function binary_search(list, min, max, num) {
   if (min > max) return - 1;

@@ -2,7 +2,7 @@
 
 `简单`
 
-```
+```js
 /**
  * @param {number[]} nums
  * @return {number}
