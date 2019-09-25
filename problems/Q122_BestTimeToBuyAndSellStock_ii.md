@@ -42,3 +42,33 @@ var maxProfit = function (prices) {
 
 时间复杂度：$O(n)$。  
 空间复杂度：$O(1)$。  
+
+
+
+```js
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function(prices) {
+  let sum = 0;
+  for (let i = 1; i < prices.length; i++) {
+    if (prices[i] > prices[i - 1]) {
+        sum += prices[i] - prices[i - 1];
+    }
+  }
+  
+  return sum;
+};
+```
+
+
+### 执行结果
+- 用时：60 ms，99.86%
+- 内存：35.3 MB，32.10%
+
+### 题解
+参考了官方题解，直接累加获得价格上升过程的和，更加简洁。 
+
+时间复杂度：$O(n)$。  
+空间复杂度：$O(1)$。  
