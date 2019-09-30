@@ -8,7 +8,7 @@
 - [x] 选择排序 SortSelection
 - [x] 归并排序 SortMerge
 - [x] 快速排序 SortQuick
-- [ ] 桶排序 SortBucket
+- [x] 桶排序 SortBucket
 - [ ] 计数排序 SortCounting
 - [ ] 基数排序 SortRadix
 
