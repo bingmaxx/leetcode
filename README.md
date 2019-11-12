@@ -22,3 +22,12 @@
 
 ## 其它
 [MathJax Plugin for Github](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima) Chrome 插件，用于解析 Tex 公式
+
+
+---
+
+## 资料
+[panjiachen - interview/algorithms](https://panjiachen.gitee.io/awesome-bookmarks/interview/algorithms.html)
+[数据结构和算法必知必会的50个代码实现](https://github.com/wangzheng0822/algo)
+[leetcode题解](https://github.com/azl397985856/leetcode)
+[用动画的形式呈现解LeetCode题目的思路](https://github.com/MisterBooo/LeetCodeAnimation)
